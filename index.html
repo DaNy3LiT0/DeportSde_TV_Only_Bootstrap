@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeporSdE - Canal de Deporte en Santiago del Estero</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Inicio Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary-subtle fixed-top">
+        <div class="container">
+            <!-- Logo a la izquierda -->
+            <a class="navbar-brand" href="#">
+                <img src="img/logo_rojo.png" alt="Logo DeporSdE" height="30">
+            </a>
+
+            <!-- Botón hamburguesa para móviles -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Contenido de la navegación a la derecha -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav me-3">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#programas">Programas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#noticias">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#videos">Videos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#galeria">Galeria</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal"
+                            data-bs-target="#contactModal">Contactanos</a>
+                    </li>
+                </ul>
+                <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#liveModal">En Vivo</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Fin Navbar -->
+
+    <!-- Inicio Sección Destacada -->
+    <section id="inicio" class="mt-5 pt-3">
+        <div class="container-fluid p-0 position-relative">
+            <img src="img/presentador2.png" class="w-100" alt="Imagen de fondo">
+            <div class="position-absolute top-0 end-0 p-4 bg-primary bg-opacity-50 text-white m-4 w-25 rounded">
+                <h2 class="fw-bold">Basket Total</h2>
+                <p>Descripción del programa Basket Total. Aquí puedes agregar más detalles sobre el show, horarios, o
+                    cualquier otra información relevante.</p>
+                <a href="#" class="btn btn-primary">Ver más</a>
+            </div>
+        </div>
+    </section>
+    <!-- Fin Sección Destacada -->
+
+    <!-- Inicio Sección de Programas -->
+    <section id="programas" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 display-4 fw-bold text-danger">Programas</h2>
+            <div class="row">
+                <!-- Atletas de Oro -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div style="height: 300px; overflow: hidden;">
+                            <img src="img/atletismo.jpg" class="card-img-top h-100 w-100 object-fit-cover"
+                                alt="Atletas de Oro">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Atletas de Oro</h5>
+                            <p class="card-text">Lo mejor del atletismo santiagueño</p>
+                            <p class="card-text"><small class="text-muted">Lun y Jue 22:30</small></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Noticiero Central -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div style="height: 300px; overflow: hidden;">
+                            <img src="img/noticiero.jpg" class="card-img-top h-100 w-100 object-fit-cover"
+                                alt="Noticiero Central DeporSdE">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Noticiero Central DeporSdE</h5>
+                            <p class="card-text">Las últimas noticias del deporte local</p>
+                            <p class="card-text"><small class="text-muted">Lun a Vie 21:00</small></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Goles y Más -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div style="height: 300px; overflow: hidden;">
+                            <img src="img/futbol.jpg" class="card-img-top h-100 w-100 object-fit-cover"
+                                alt="Goles y Más">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Goles y Más</h5>
+                            <p class="card-text">Resumen de los partidos de la semana</p>
+                            <p class="card-text"><small class="text-muted">Mar y Sáb 09:00</small></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pedaleando -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div style="height: 300px; overflow: hidden;">
+                            <img src="img/fitness.jpg" class="card-img-top h-100 w-100 object-fit-cover"
+                                alt="Pedaleando">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Pedaleando</h5>
+                            <p class="card-text">Todo sobre ciclismo y fitness</p>
+                            <p class="card-text"><small class="text-muted">Mié 18:00 y Dom 10:00</small></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Velocidad Pura -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div style="height: 300px; overflow: hidden;">
+                            <img src="img/autos.jpg" class="card-img-top h-100 w-100 object-fit-cover"
+                                alt="Velocidad Pura">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Velocidad Pura</h5>
+                            <p class="card-text">Adrenalina sobre ruedas</p>
+                            <p class="card-text"><small class="text-muted">Jue y Dom 12:00</small></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Smash Point -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div style="height: 300px; overflow: hidden;">
+                            <img src="img/tenis.jpg" class="card-img-top h-100 w-100 object-fit-cover"
+                                alt="Smash Point">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Smash Point</h5>
+                            <p class="card-text"> Análisis y debate sobre el mundo del tenis</p>
+                            <p class="card-text"><small class="text-muted">Lun y Vie 20:00</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fin Sección de Programas -->
+
+    <!-- Sección de Noticias -->
+    <section id="noticias" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4 display-4 fw-bold text-danger">Noticias Deportivas</h2>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/Noticias/futbol.jpg" class="card-img-top" alt="Fútbol Local">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sarmiento se corona campeón del torneo local</h5>
+                                    <p class="card-text">El equipo santiagueño logró una victoria histórica en la final.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/Noticias/bmx.jpg" class="card-img-top" alt="Ciclismo de Ruta">
+                                <div class="card-body">
+                                    <h5 class="card-title">Vuelta a Santiago: etapa decisiva</h5>
+                                    <p class="card-text">Los ciclistas se preparan para la etapa reina de la
+                                        competencia.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/Noticias/tenis.jpg" class="card-img-top" alt="Tenis Internacional">
+                                <div class="card-body">
+                                    <h5 class="card-title">El Abierto de Santiago se acerca</h5>
+                                    <p class="card-text">Los mejores tenistas del mundo se preparan para competir.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/Noticias/natacion.jpg" class="card-img-top" alt="Natación Competitiva">
+                                <div class="card-body">
+                                    <h5 class="card-title">Campeonato Nacional de Natación</h5>
+                                    <p class="card-text">Los nadadores se destacan en las pruebas de velocidad.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/Noticias/rugby.jpg" class="card-img-top" alt="Rugby Local">
+                                <div class="card-body">
+                                    <h5 class="card-title">El equipo de rugby local clasifica a playoffs</h5>
+                                    <p class="card-text">Una temporada exitosa que culmina en la clasificación.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/Noticias/boxeo.jpg" class="card-img-top" alt="Boxeo Juvenil">
+                                <div class="card-body">
+                                    <h5 class="card-title">Campeonato Nacional de Boxeo Juvenil</h5>
+                                    <p class="card-text">Los jóvenes talentos muestran su habilidad en el ring.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <h3>Últimas Noticias</h3>
+                    <div class="overflow-auto"></div>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <h6>Quimsa se prepara para enfrentar a Obras en La Banda</h6>
+                            <small class="text-muted">20 Nov 2023</small>
+                        </li>
+                        <li class="list-group-item">
+                            <h6>Central Córdoba busca técnico tras la salida de Rondina</h6>
+                            <small class="text-muted">19 Nov 2023</small>
+                        </li>
+                        <li class="list-group-item">
+                            <h6>Old Lions se consagró campeón del Regional del NOA</h6>
+                            <small class="text-muted">19 Nov 2023</small>
+                        </li>
+                        <li class="list-group-item">
+                            <h6>Gran actuación santiagueña en el Nacional U18</h6>
+                            <small class="text-muted">18 Nov 2023</small>
+                        </li>
+                        <li class="list-group-item">
+                            <h6>La Vuelta Santiagueña confirmó su fecha para 2024</h6>
+                            <small class="text-muted">18 Nov 2023</small>
+                        </li>
+                        <li class="list-group-item">
+                            <h6>Nicolás Aguirre regresa a Quimsa para la próxima temporada</h6>
+                            <small class="text-muted">17 Nov 2023</small>
+                        </li>
+                        <li class="list-group-item">
+                            <h6>Güemes suma refuerzos para el Federal A</h6>
+                            <small class="text-muted">17 Nov 2023</small>
+                        </li>
+                        <li class="list-group-item">
+                            <h6>Santiago Lawn Tennis dominó el torneo Anual Femenino</h6>
+                            <small class="text-muted">16 Nov 2023</small>
+                        </li>
+                        <li class="list-group-item">
+                            <h6>Exitosa velada boxística en el Club Juventud</h6>
+                            <small class="text-muted">16 Nov 2023</small>
+                        </li>
+                        <li class="list-group-item">
+                            <h6>El natatorio del Polideportivo Provincial será sede del Regional</h6>
+                            <small class="text-muted">15 Nov 2023</small>
+                        </li>
+                        <li class="list-group-item">
+                            <h6>Olímpico de La Banda se prepara para la Liga Argentina</h6>
+                            <small class="text-muted">15 Nov 2023</small>
+                        </li>
+                        <li class="list-group-item">
+                            <h6>El Termas de Río Hondo confirma fecha del MotoGP 2024</h6>
+                            <small class="text-muted">14 Nov 2023</small>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Sección de Videos -->
+    <section id="videos" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 display-4 fw-bold text-danger">Videos</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/KDwHfeRmw7Q" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/kocR7rKe7Z8" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/fZMDBouDv84" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/Gcw1WJn9AOs" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Galería -->
+    <section id="galeria" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4 display-4 fw-bold text-danger">Galería</h2>
+
+            <div class="position-relative">
+                <div id="galeriaCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <!-- Indicadores con color de énfasis -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#galeriaCarousel" data-bs-slide-to="0"
+                            class="active bg-primary" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#galeriaCarousel" data-bs-slide-to="1" class="bg-primary"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#galeriaCarousel" data-bs-slide-to="2" class="bg-primary"
+                            aria-label="Slide 3"></button>
+                    </div>
+
+                    <!-- Slides -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row g-4">
+                                <div class="col-md-6 position-relative">
+                                    <div style="height: 300px; overflow: hidden;">
+                                        <img src="img/Galerias/quimsa.jpg"
+                                            class="d-block w-100 h-100 object-fit-cover rounded"
+                                            alt="Partido de básquet">
+                                    </div>
+                                    <div class="carousel-caption d-none d-md-block bg-primary bg-opacity-50 rounded">
+                                        <h5 class="fw-bold">Quimsa en acción</h5>
+                                        <p>Liga Nacional de Básquet</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 position-relative">
+                                    <div style="height: 300px; overflow: hidden;">
+                                        <img src="img/Galerias/oldlions.jpg"
+                                            class="d-block w-100 h-100 object-fit-cover rounded" alt="Partido de rugby">
+                                    </div>
+                                    <div class="carousel-caption d-none d-md-block bg-primary bg-opacity-50 rounded">
+                                        <h5 class="fw-bold">Old Lions Rugby</h5>
+                                        <p>Campeón del Regional NOA</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row g-4">
+                                <div class="col-md-6 position-relative">
+                                    <div style="height: 300px; overflow: hidden;">
+                                        <img src="img/Galerias/maraton.jpg"
+                                            class="d-block w-100 h-100 object-fit-cover rounded"
+                                            alt="Competencia de atletismo">
+                                    </div>
+                                    <div class="carousel-caption d-none d-md-block bg-primary bg-opacity-50 rounded">
+                                        <h5 class="fw-bold">Maratón El Liberal</h5>
+                                        <p>Edición anual 2023</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 position-relative">
+                                    <div style="height: 300px; overflow: hidden;">
+                                        <img src="img/Galerias/natacion.jpg"
+                                            class="d-block w-100 h-100 object-fit-cover rounded"
+                                            alt="Competencia de natación">
+                                    </div>
+                                    <div class="carousel-caption d-none d-md-block bg-primary bg-opacity-50 rounded">
+                                        <h5 class="fw-bold">Torneo Provincial de Natación</h5>
+                                        <p>Polideportivo Provincial</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row g-4">
+                                <div class="col-md-6 position-relative">
+                                    <div style="height: 300px; overflow: hidden;">
+                                        <img src="img/Galerias/iclismo.jpg"
+                                            class="d-block w-100 h-100 object-fit-cover rounded"
+                                            alt="Carrera de ciclismo">
+                                    </div>
+                                    <div class="carousel-caption d-none d-md-block bg-primary bg-opacity-50 rounded">
+                                        <h5 class="fw-bold">Vuelta a Santiago</h5>
+                                        <p>Etapa final en la capital</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 position-relative">
+                                    <!-- Puedes agregar otra imagen aquí si lo deseas -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Controles -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#galeriaCarousel"
+                        data-bs-slide="prev" style="left: -150px;">
+                        <span class="carousel-control-prev-icon bg-primary p-3" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#galeriaCarousel"
+                        data-bs-slide="next" style="right: -150px;">
+                        <span class="carousel-control-next-icon bg-primary p-3" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-danger text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Sobre Nosotros</h5>
+                    <p>Información sobre el canal</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <h5>Síguenos</h5>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de Contacto -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Contactanos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="submit" class="btn btn-danger">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Modal para transmisión en vivo -->
+<div class="modal fade" id="liveModal" tabindex="-1" aria-labelledby="liveModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="liveModalLabel">Transmisión en Vivo</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="ratio ratio-16x9">
+            <iframe width="695" height="391" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Rick Astley - Never Gonna Give You Up (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
